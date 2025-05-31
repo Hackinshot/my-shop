@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Одежда минимализм</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e3eafc, #fbefff);
+            padding: 40px 20px;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.8em;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .subtext {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            padding-bottom: 20px;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 1.3em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .product button,
+        .tg-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-right: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .product button:hover,
+        .tg-button:hover {
+            background-color: #444;
+        }
+
+        .tg-button.telegram {
+            background: #0088cc;
+            border: 3px solid #005f8a;
+            box-shadow: 0 0 15px rgba(0, 136, 204, 0.7);
+            font-weight: 600;
+        }
+
+        .tg-button.telegram:hover {
+            background: #005f8a;
+            box-shadow: 0 0 25px rgba(0, 136, 204, 0.9);
+        }
+
+        .tg-button.whatsapp {
+            background: #25D366;
+            border: 3px solid #128C7E;
+            font-weight: 600;
+        }
+
+        .tg-button.whatsapp:hover {
+            background: #128C7E;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Apple одежда минимализм</h1>
+    <p class="subtext">Коллекция 2025 — чистые линии, oversize, спокойные тона</p>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="img/Оверсайз.jpg" alt="Футболка Oversize">
+            <div class="product-content">
+                <div class="product-title">Футболка Oversize</div>
+                <div class="product-price">1200 ₽</div>
+                <button>Заказать</button>
+                <a href="https://t.me/GlebFilofish" target="_blank" class="tg-button telegram">Telegram</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/минимализм.jpg" alt="Свитер Oversize">
+            <div class="product-content">
+                <div class="product-title">Свитер Oversize</div>
+                <div class="product-price">1340 ₽</div>
+                <button>Заказать</button>
+                <a href="https://t.me/GlebFilofish" target="_blank" class="tg-button telegram">Telegram</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/мода.jpg" alt="Минимализм Oversize">
+            <div class="product-content">
+                <div class="product-title">Минимализм Oversize</div>
+                <div class="product-price">3200 ₽</div>
+                <button>Заказать</button>
+                <a href="https://t.me/GlebFilofish" target="_blank" class="tg-button telegram">Telegram</a>
+                <a href="https://wa.me/79030653249" target="_blank" class="tg-button whatsapp">WhatsApp</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
